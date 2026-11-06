@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+
+    <!-- ============ Basics ============ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0F1319">
+    <title>راما | التخصصية للمقاولات - RAMA Contracting & Specialized</title>
+
+    <!-- ============ SEO ============ -->
+    <meta name="description" content="راما للمقاولات العامة والتصميم الداخلي في جدة: بناء، تشطيب تسليم مفتاح، تصميم 3D وترميم. احجز استشارتك المجانية الآن.">
+
+    <!-- ============ Social sharing (Open Graph) ============ -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:title" content="راما | التخصصية للمقاولات والتصميم الداخلي">
+    <meta property="og:description" content="مقاولات وتشطيب تسليم مفتاح وتصميم داخلي في جدة بخبرة +12 سنة.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- ============ Favicon ============ -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C5A059'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='700' text-anchor='middle' fill='%231A202C' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E">
+
+    <!-- ============ Structured data (Google) ============ -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"GeneralContractor","name":"راما للمقاولات العامة والتصميم الداخلي","alternateName":"RAMA Contracting","telephone":"+966505635240","email":"sab@ramaspe.com","address":{"@type":"PostalAddress","streetAddress":"شارع الأمير سعود الفيصل، حي الروضة","addressLocality":"جدة","postalCode":"23433","addressCountry":"SA"},"openingHours":"Su-Th 08:00-18:00"}
+    </script>
+
+    <!-- ============ Fonts: Cairo & Tajawal ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- ============ Icons: Font Awesome ============ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ============ Tailwind CSS (CDN) + its config ============ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+
+    <!-- ============ Custom styles ============ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ============ Page scripts ============ -->
+    <script src="main.js" defer></script>
+</head>
+<body class="antialiased selection:bg-gold selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3 space-x-reverse group">
+                    <div class="w-10 h-10 rounded-lg gold-bg-gradient flex items-center justify-center text-darkslate font-bold text-xl shadow-lg transform group-hover:rotate-6 transition-transform">
+                        R
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-bold tracking-wider text-white font-tajawal">راما <span class="text-gold font-light">| RAMA</span></span>
+                        <span class="text-xs text-gray-300 -mt-1 tracking-widest">التخصصية للمقاولات </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 space-x-reverse font-medium text-gray-200">
+                    <a href="index.html" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">الرئيسية</a>
+                    <a href="services.html" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">خدماتنا</a>
+                    <a href="portfolio.html" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">أعمالنا</a>
+                    <a href="about.html" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">لماذا راما</a>
+                    <a href="contact.html#contact-info" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">استفسار تجاري</a>
+                    <a href="testimonials.html" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">آراء العملاء</a>
+                </nav>
+
+                <!-- CTA Button Header -->
+                <div class="hidden md:flex items-center space-x-3 space-x-reverse">
+                    <a href="tel:00966505635240" class="border border-gold/50 text-gold hover:bg-gold hover:text-darkslate-dark font-bold px-4 py-2 rounded-full transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> 0505635240
+                    </a>
+                    <a href="contact.html#contact" class="gold-bg-gradient text-darkslate-dark font-bold px-5 py-2.5 rounded-full hover:shadow-lg hover:shadow-gold/30 transition-all transform hover:-translate-y-0.5 text-sm">
+                        <i class="fa-solid fa-calendar-check ml-1"></i>احجز استشارتك
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-200 hover:text-gold focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darkslate-dark border-b border-gold/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block text-gray-200 hover:text-gold py-2 border-b border-gray-800">الرئيسية</a>
+            <a href="services.html" class="block text-gray-200 hover:text-gold py-2 border-b border-gray-800">خدماتنا</a>
+            <a href="portfolio.html" class="block text-gray-200 hover:text-gold py-2 border-b border-gray-800">أعمالنا</a>
+            <a href="about.html" class="block text-gray-200 hover:text-gold py-2 border-b border-gray-800">لماذا راما</a>
+            <a href="contact.html#contact-info" class="block text-gray-200 hover:text-gold py-2 border-b border-gray-800">المبيعات والاستفسارات التجاريه</a>
+            <a href="testimonials.html" class="block text-gray-200 hover:text-gold py-2 border-b border-gray-800">آراء العملاء</a>
+            <a href="tel:00966505635240" class="block text-center text-gold border border-gold/40 py-2.5 rounded-xl font-bold">
+                <i class="fa-solid fa-phone ml-2"></i> اتصل بنا: 0505635240
+            </a>
+            <a href="contact.html#contact" class="block gold-bg-gradient text-darkslate-dark font-bold text-center py-3 rounded-xl mt-2">
+                احجز استشارتك المجانية
+            </a>
+        </div>
+    </header>
+
+    <main>
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 hero-overlay"></div>
+        
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-1/4 right-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-right z-10 w-full">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 space-x-reverse bg-gold/10 border border-gold/30 px-4 py-1.5 rounded-full text-gold text-sm font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                        <span>فخامة المقاولات ودقة التنفيذ الهندسي</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-tajawal">
+                        نبني المستقبل ونحوّل رؤيتك إلى <span class="gold-gradient-text block mt-2">صروح معمارية فاخرة</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
+                        في <strong class="text-gold font-semibold">راما (RAMA) للمقاولات العامة والتصميم الداخلي</strong>، ندمج بين أساليب البناء الحديثة والتصاميم الراقية لنقدم لك حلول تشطيب ومقاولات تسليم مفتاح متكاملة.
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="contact.html#contact" class="gold-bg-gradient text-darkslate-dark font-bold text-lg px-8 py-4 rounded-xl shadow-xl hover:shadow-gold/30 hover:scale-105 transition-all text-center">
+                            طلب استشارة مقاولات وتصميم <i class="fa-solid fa-arrow-left mr-2"></i>
+                        </a>
+                        <a href="portfolio.html" class="border border-gold/50 text-white hover:bg-gold/10 font-medium text-lg px-8 py-4 rounded-xl transition-all text-center backdrop-blur-sm">
+                            استكشف معرض المشاريع
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-gray-700/60 grid grid-cols-3 gap-4 text-center md:text-right">
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-bold text-white font-tajawal">+200</span>
+                            <span class="text-xs sm:text-sm text-gray-400">مشروع مقاولات وتشطيب</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-bold text-white font-tajawal">100%</span>
+                            <span class="text-xs sm:text-sm text-gray-400">مطابقة للمواصفات</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-bold text-white font-tajawal">+12</span>
+                            <span class="text-xs sm:text-sm text-gray-400">سنة خبرة في السوق</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Consultation Mini Card (Desktop) -->
+                <div class="md:col-span-5">
+                    <div class="dark-glass p-8 rounded-3xl shadow-2xl text-right relative overflow-hidden border border-gold/30">
+                        <div class="absolute -top-12 -left-12 w-32 h-32 bg-gold/20 rounded-full blur-xl"></div>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-2 font-tajawal">احصل على كشف وتثمين للمشروع</h3>
+                        <p class="text-gray-300 text-sm mb-6">سجل بياناتك وسيتواصل معك مهندس مقاولات متخصص لمناقشة التفاصيل.</p>
+
+                        <form id="quick-form" class="space-y-4" novalidate>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">الاسم بالكامل</label>
+                                <input type="text" required placeholder="مثال: أحمد المحمد" class="w-full bg-darkslate border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">رقم الهاتف / الواتساب</label>
+                                <input type="tel" required placeholder="05xxxxxxxx" class="w-full bg-darkslate border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors text-sm text-right" dir="ltr">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">نوع الخدمة المطلوبة</label>
+                                <select class="w-full bg-darkslate border border-gray-700 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-gold transition-colors text-sm">
+                                    <option value="contracting">مقاولات وبناء عظم</option>
+                                    <option value="turnkey">تشطيب متكامل تسليم مفتاح</option>
+                                    <option value="interior">تصميم داخلي وديكور</option>
+                                    <option value="renovation">ترميم وتطوير المباني</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full gold-bg-gradient text-darkslate-dark font-bold py-3.5 rounded-lg hover:brightness-110 transition-all shadow-md text-base mt-2">
+                                إرسال الطلب الآن
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="featured-work" class="py-24 bg-darkslate text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold font-bold text-sm tracking-widest uppercase">معرض الإبداع</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-tajawal mt-2">نماذج من أعمالنا المختارة</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Item 1 -->
+                <div class="portfolio-item modern group relative overflow-hidden rounded-2xl shadow-xl bg-darkslate-light border border-gray-800 cursor-pointer" tabindex="0" role="button" aria-label="عرض صور المشروع" data-images="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop|https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1600&auto=format&fit=crop">
+                    <span class="absolute top-4 left-4 z-10 bg-darkslate-dark/80 text-gold text-xs font-bold px-3 py-1 rounded-full border border-gold/40"><i class="fa-regular fa-images ml-1"></i>2 صور</span>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="فيلا مودرن فاخرة" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkslate-dark via-darkslate-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-semibold mb-1">مودرن سكني</span>
+                        <h3 class="text-xl font-bold text-white font-tajawal">تصميم صالة فيلا مودرن - الرياض</h3>
+                        <p class="text-gray-300 text-xs mt-2">دمج الإضاءة المخفية مع الخشب الدافئ لتجربة معيشة استثنائية.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-item classic group relative overflow-hidden rounded-2xl shadow-xl bg-darkslate-light border border-gray-800 cursor-pointer" tabindex="0" role="button" aria-label="عرض صور المشروع" data-images="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop|https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1600&auto=format&fit=crop">
+                    <span class="absolute top-4 left-4 z-10 bg-darkslate-dark/80 text-gold text-xs font-bold px-3 py-1 rounded-full border border-gold/40"><i class="fa-regular fa-images ml-1"></i>2 صور</span>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" alt="مجلس نيوكلاسيك" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkslate-dark via-darkslate-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-semibold mb-1">كلاسيك ونيوكلاسيك</span>
+                        <h3 class="text-xl font-bold text-white font-tajawal">مجلس رجال نيوكلاسيك - جدة</h3>
+                        <p class="text-gray-300 text-xs mt-2">لمسات التذهيب الراقية مع الزخارف الهندسية المعاصرة.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-item commercial group relative overflow-hidden rounded-2xl shadow-xl bg-darkslate-light border border-gray-800 cursor-pointer" tabindex="0" role="button" aria-label="عرض صور المشروع" data-images="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop|https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1600&auto=format&fit=crop">
+                    <span class="absolute top-4 left-4 z-10 bg-darkslate-dark/80 text-gold text-xs font-bold px-3 py-1 rounded-full border border-gold/40"><i class="fa-regular fa-images ml-1"></i>2 صور</span>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop" alt="مكتب تجاري" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkslate-dark via-darkslate-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-semibold mb-1">تجاري ومكاتب</span>
+                        <h3 class="text-xl font-bold text-white font-tajawal">مقر شركة استثمارية - دبي</h3>
+                        <p class="text-gray-300 text-xs mt-2">بيئة عمل بيئية ومحفزة للإنتاجية بتصميم بيوفيلك عصري.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="portfolio-item modern group relative overflow-hidden rounded-2xl shadow-xl bg-darkslate-light border border-gray-800 cursor-pointer" tabindex="0" role="button" aria-label="عرض صور المشروع" data-images="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1600&auto=format&fit=crop|https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop">
+                    <span class="absolute top-4 left-4 z-10 bg-darkslate-dark/80 text-gold text-xs font-bold px-3 py-1 rounded-full border border-gold/40"><i class="fa-regular fa-images ml-1"></i>2 صور</span>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop" alt="غرفة نوم ماستر" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkslate-dark via-darkslate-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-semibold mb-1">مودرن سكني</span>
+                        <h3 class="text-xl font-bold text-white font-tajawal">جناح نوم رئيسي (Master Bedroom)</h3>
+                        <p class="text-gray-300 text-xs mt-2">تصميم فندقي مريح بألوان محايدة وخامات فاخرة.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="portfolio-item commercial group relative overflow-hidden rounded-2xl shadow-xl bg-darkslate-light border border-gray-800 cursor-pointer" tabindex="0" role="button" aria-label="عرض صور المشروع" data-images="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1600&auto=format&fit=crop|https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop">
+                    <span class="absolute top-4 left-4 z-10 bg-darkslate-dark/80 text-gold text-xs font-bold px-3 py-1 rounded-full border border-gold/40"><i class="fa-regular fa-images ml-1"></i>2 صور</span>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="كافيه فخم" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkslate-dark via-darkslate-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-semibold mb-1">تجاري ومكاتب</span>
+                        <h3 class="text-xl font-bold text-white font-tajawal">تصميم كافيه ومخبز راقي</h3>
+                        <p class="text-gray-300 text-xs mt-2">استغلال ممتاز للمساحة وتجربة بصرية فريدة للزوار.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="portfolio-item classic group relative overflow-hidden rounded-2xl shadow-xl bg-darkslate-light border border-gray-800 cursor-pointer" tabindex="0" role="button" aria-label="عرض صور المشروع" data-images="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1600&auto=format&fit=crop|https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop">
+                    <span class="absolute top-4 left-4 z-10 bg-darkslate-dark/80 text-gold text-xs font-bold px-3 py-1 rounded-full border border-gold/40"><i class="fa-regular fa-images ml-1"></i>2 صور</span>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=800&auto=format&fit=crop" alt="مطبخ مودرن كلاسيك" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkslate-dark via-darkslate-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-gold text-xs font-semibold mb-1">كلاسيك ونيوكلاسيك</span>
+                        <h3 class="text-xl font-bold text-white font-tajawal">مطبخ نيوكلاسيك مفتوح</h3>
+                        <p class="text-gray-300 text-xs mt-2">تناغم الرخام الطبيعي مع الخشب الداكن والخزائن المذهبة.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-12">
+                <a href="portfolio.html" class="inline-flex items-center gap-2 border border-gold/60 text-gold hover:bg-gold hover:text-darkslate-dark font-bold px-8 py-3.5 rounded-xl transition-all">
+                    عرض كل المشاريع <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkslate-dark text-gray-400 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <div class="w-10 h-10 rounded-lg gold-bg-gradient flex items-center justify-center text-darkslate font-bold text-xl">
+                            R
+                        </div>
+                        <span class="text-2xl font-bold text-white font-tajawal">راما | RAMA</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-gray-400">
+                        شركة راما (RAMA) للمقاولات العامة والتصميم الداخلي، تنفيذ وتصميم المباني والتشطيبات الفاخرة وإدارة المشاريع الإنشائية.
+                    </p>
+                    <div class="flex space-x-3 space-x-reverse pt-2">
+                        <a href="#" class="w-9 h-9 rounded-full bg-darkslate border border-gray-700 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-darkslate border border-gray-700 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-darkslate border border-gray-700 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold font-tajawal mb-4 text-base border-r-2 border-gold pr-3">روابط سريعة</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-gold transition-colors">الرئيسية</a></li>
+                        <li><a href="services.html" class="hover:text-gold transition-colors">خدمات المقاولات والتشطيب</a></li>
+                        <li><a href="portfolio.html" class="hover:text-gold transition-colors">معرض المشاريع</a></li>
+                        <li><a href="about.html" class="hover:text-gold transition-colors">عن شركة راما</a></li>
+                        <li><a href="contact.html#contact-info" class="hover:text-gold transition-colors">الاستفسارات التجارية (محمود الحكيم)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h4 class="text-white font-bold font-tajawal mb-4 text-base border-r-2 border-gold pr-3">خدماتنا الرئيسية</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><span class="hover:text-gold transition-colors">المقاولات العامة والبناء الإنشائي</span></li>
+                        <li><span class="hover:text-gold transition-colors">التشطيبات المعمارية تسليم مفتاح</span></li>
+                        <li><span class="hover:text-gold transition-colors">التصميم الداخلي والديكور 3D</span></li>
+                        <li><span class="hover:text-gold transition-colors">الترميم وتحديث الواجهات والمباني</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact info -->
+                <div>
+                    <h4 class="text-white font-bold font-tajawal mb-4 text-base border-r-2 border-gold pr-3">اتصل بنا</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li class="flex items-start space-x-2 space-x-reverse text-gray-300">
+                            <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+                            <span>جدة، المملكة العربية السعودية، الأمير سعود الفيصل، الروضة، جدة 23433</span>
+                        </li>
+                        <li class="flex items-center space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-phone text-gold"></i>
+                            <span class="text-gray-400">هاتف:</span>
+                            <a href="tel:00966126551213" class="hover:text-gold dir-ltr font-bold text-white">00966 12 655 12 13</a>
+                        </li>
+                        <li class="flex items-center space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-mobile-screen text-gold"></i>
+                            <span class="text-gray-400">الجوال:</span>
+                            <a href="tel:00966560445444" class="hover:text-gold dir-ltr font-bold text-white">00966 560 445 444</a>
+                        </li>
+                        <li class="flex items-center space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-user-tie text-gold"></i>
+                            <span class="text-gray-400">الجوال:</span>
+                            <a href="tel:00966505635240" class="hover:text-gold dir-ltr font-bold text-gold">00966 50 563 5240</a>
+                        </li>
+                        <li class="flex items-center space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-envelope text-gold"></i>
+                            <a href="mailto:sab@ramaspe.com" class="hover:text-gold dir-ltr text-white">sab@ramaspe.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+                <p>جميع الحقوق محفوظة © <span id="year"></span> شركة راما للمقاولات العامة والتصميم الداخلي (RAMA Contracting & Design).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons (WhatsApp + Call) -->
+    <div class="fixed bottom-6 left-6 z-50 flex flex-col space-y-3">
+        <!-- Call Button -->
+        <a href="tel:00966505635240" title="اتصل بنا الآن" class="bg-gold hover:bg-gold-dark text-darkslate-dark w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300">
+            <i class="fa-solid fa-phone text-xl sm:text-2xl"></i>
+        </a>
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/966505635240" target="_blank" rel="noopener noreferrer" title="راسلنا عبر واتساب" class="bg-green-500 hover:bg-green-600 text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300">
+            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        </a>
+    </div>
+
+</body>
+</html>

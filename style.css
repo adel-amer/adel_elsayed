@@ -1,0 +1,133 @@
+body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #F9F6F0;
+            color: #1A202C;
+            overflow-x: hidden;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1A202C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A059;
+            border-radius: 4px;
+        }
+
+        /* Subtle Gold Gradient Overlay */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #E6CA65 0%, #C5A059 50%, #9A7B39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gold-bg-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #9A7B39 100%);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(15, 19, 25, 0.92), rgba(26, 32, 44, 0.7));
+        }
+
+        /* Glassmorphic Cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .dark-glass {
+            background: rgba(26, 32, 44, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 160, 89, 0.25);
+        }
+
+/* ===== Improvements ===== */
+
+html { scroll-padding-top: 5rem; }
+section[id], div[id="contact-info"] { scroll-margin-top: 5rem; }
+
+/* Tailwind has no .dir-ltr: phone numbers / emails inside RTL text */
+.dir-ltr { direction: ltr; unicode-bidi: embed; display: inline-block; }
+
+/* Standard property alongside the -webkit one */
+.gold-gradient-text { background-clip: text; }
+
+/* Visible keyboard focus */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #E6CA65;
+    outline-offset: 3px;
+}
+
+/* Active section in the navbar */
+nav a.is-active { color: #C5A059; border-bottom-color: #C5A059; }
+
+/* Portfolio filter: hide/show with a short fade */
+.portfolio-item { transition: opacity .3s ease, transform .3s ease; }
+.portfolio-item.is-hidden { display: none; }
+.portfolio-item.is-fading { opacity: 0; transform: scale(.97); }
+
+/* One orchestrated entrance for the hero */
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+#hero .md\:col-span-7 > *, #hero .md\:col-span-5 > div {
+    opacity: 0;
+    animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards;
+}
+#hero .md\:col-span-7 > :nth-child(2) { animation-delay: .08s; }
+#hero .md\:col-span-7 > :nth-child(3) { animation-delay: .16s; }
+#hero .md\:col-span-7 > :nth-child(4) { animation-delay: .24s; }
+#hero .md\:col-span-7 > :nth-child(5) { animation-delay: .32s; }
+#hero .md\:col-span-5 > div { animation-delay: .3s; }
+
+/* Inline field errors */
+.field-error { border-color: #ef4444 !important; }
+.field-error-msg { color: #ef4444; font-size: .75rem; margin-top: .25rem; }
+
+/* Toast */
+#toast {
+    position: fixed; bottom: 1.5rem; right: 50%; transform: translate(50%, 120%);
+    background: #1A202C; color: #fff; border: 1px solid rgba(197,160,89,.5);
+    padding: .85rem 1.25rem; border-radius: .9rem; font-weight: 600; font-size: .9rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,.35); z-index: 100; max-width: 90vw;
+    transition: transform .35s ease;
+}
+#toast.show { transform: translate(50%, 0); }
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    #hero .md\:col-span-7 > *, #hero .md\:col-span-5 > div { opacity: 1; }
+}
+
+/* Touch screens have no hover: keep project captions visible */
+@media (hover: none) {
+    .portfolio-item .opacity-0 { opacity: 1; }
+}
+
+/* ===== Project gallery (lightbox) ===== */
+#lightbox { position: fixed; inset: 0; z-index: 90; display: none; flex-direction: column;
+    background: rgba(10,13,18,.96); padding: 1rem; }
+#lightbox.open { display: flex; }
+#lightbox .lb-stage { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; gap: .75rem; }
+#lightbox figure { flex: 1; min-width: 0; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+#lightbox img.lb-img { max-width: 100%; max-height: calc(100% - 4.5rem); object-fit: contain; border-radius: .75rem; }
+#lightbox figcaption { color: #fff; text-align: center; margin-top: .9rem; max-width: 40rem; }
+#lightbox figcaption small { color: #C5A059; font-weight: 700; display: block; }
+#lightbox figcaption strong { font-family: 'Tajawal', sans-serif; font-size: 1.15rem; }
+#lightbox figcaption p { color: #cbd5e1; font-size: .85rem; margin-top: .25rem; }
+#lightbox .lb-btn { width: 2.9rem; height: 2.9rem; border-radius: 9999px; flex: none; color: #fff;
+    background: rgba(255,255,255,.08); border: 1px solid rgba(197,160,89,.5); transition: background .2s; }
+#lightbox .lb-btn:hover { background: #C5A059; color: #0F1319; }
+#lightbox .lb-top { display: flex; justify-content: space-between; align-items: center; color: #cbd5e1; font-size: .85rem; }
+#lightbox .lb-thumbs { display: flex; gap: .5rem; justify-content: center; padding-top: .75rem; overflow-x: auto; }
+#lightbox .lb-thumbs button { width: 4.5rem; height: 3.2rem; border-radius: .5rem; overflow: hidden; flex: none;
+    border: 2px solid transparent; opacity: .55; transition: opacity .2s, border-color .2s; }
+#lightbox .lb-thumbs button[aria-current="true"] { opacity: 1; border-color: #C5A059; }
+#lightbox .lb-thumbs img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 640px) { #lightbox .lb-btn { position: absolute; top: 50%; z-index: 2; width: 2.5rem; height: 2.5rem; }
+    #lightbox .lb-prev { right: .5rem; } #lightbox .lb-next { left: .5rem; } }
+body.lb-lock { overflow: hidden; }
